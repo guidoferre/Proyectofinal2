@@ -1,0 +1,22 @@
+{% extends 'padre.html' %}
+
+
+{% block bloqueQueCambia %}
+   <h1>Bienvenidos a la seccion de clientes </h1>
+   <p>Aqui encontraras un listado de todos tus clientes</p>
+   <ul>
+
+        
+    {% for clientes in lista_clientes %}
+        <li>{{clientes.nombre}} {{clientes.apellido}}</li>
+    {% endfor %}
+        
+
+</ul>
+
+    
+{% endblock bloqueQueCambia  %}
+    
+
+
+
